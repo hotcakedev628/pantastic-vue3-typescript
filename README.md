@@ -23,6 +23,8 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
+- Make sure you rename the existing `.env.example` file to `.env`.
+
 ```sh
 npm install
 ```
