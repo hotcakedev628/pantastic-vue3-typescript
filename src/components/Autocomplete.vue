@@ -2,7 +2,7 @@
   <div class="autocomplete">
     <label :for="name" class="label">{{ label }}</label>
     <input
-      v-bind="inputAttrs"
+      v-bind="$attrs"
       type="text"
       :value="inputValue"
       @focus="isFocused = true"
@@ -44,9 +44,6 @@ export default defineComponent({
     initialValue: {
       type: [String, Number] as PropType<any | null>,
       default: null,
-    },
-    inputAttrs: {
-      type: Object as PropType<any | null>,
     },
     onBlur: {
       type: Function as PropType<() => any>,
